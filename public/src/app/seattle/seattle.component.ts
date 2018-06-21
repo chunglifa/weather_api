@@ -25,9 +25,9 @@ getThisCity() {
   const observable = this._weatherService.bobFunction();
   observable.subscribe(server_response => {
     this.weather = server_response;
-    this.temp_min = ((this.weather.main.temp_min*(9/5)-459));
-    this.temp_max = ((this.weather.main.temp_max*(9/5)-459));
-    this.temp = ((this.weather.main.temp*(9/5)-459));
+    this.temp_min = Math.floor(((this.weather.main.temp_min * (9 / 5) - 459)));
+    this.temp_max = Math.floor(((this.weather.main.temp_max * (9 / 5) - 459)));
+    this.temp = Math.floor(((this.weather.main.temp * (9 / 5) - 459)));
     this.status = this.weather.weather[0].description;
     this.humidity = this.weather.main.humidity;
     console.log('your Seattle forecast is....', this.weather);

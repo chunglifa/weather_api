@@ -278,9 +278,9 @@ var BurbankComponent = /** @class */ (function () {
         observable.subscribe(function (response) {
             _this.weather = response;
             console.log('your San Jose weather is', _this.weather);
-            _this.temp_min = ((_this.weather.main.temp_min * (9 / 5) - 459));
-            _this.temp_max = ((_this.weather.main.temp_max * (9 / 5) - 459));
-            _this.temp = ((_this.weather.main.temp * (9 / 5) - 459));
+            _this.temp_min = Math.floor(((_this.weather.main.temp_min * (9 / 5) - 459)));
+            _this.temp_max = Math.floor(((_this.weather.main.temp_max * (9 / 5) - 459)));
+            _this.temp = Math.floor(((_this.weather.main.temp * (9 / 5) - 459)));
             _this.status = _this.weather.weather[0].description;
             _this.humidity = _this.weather.main.humidity;
         });
@@ -359,9 +359,9 @@ var ChicagoComponent = /** @class */ (function () {
         observable.subscribe(function (response) {
             _this.weather = response;
             console.log('your San Jose weather is', _this.weather);
-            _this.temp_min = ((_this.weather.main.temp_min * (9 / 5) - 459));
-            _this.temp_max = ((_this.weather.main.temp_max * (9 / 5) - 459));
-            _this.temp = ((_this.weather.main.temp * (9 / 5) - 459));
+            _this.temp_min = Math.floor(((_this.weather.main.temp_min * (9 / 5) - 459)));
+            _this.temp_max = Math.floor(((_this.weather.main.temp_max * (9 / 5) - 459)));
+            _this.temp = Math.floor(((_this.weather.main.temp * (9 / 5) - 459)));
             _this.status = _this.weather.weather[0].description;
             _this.humidity = _this.weather.main.humidity;
         });
@@ -440,9 +440,9 @@ var DallasComponent = /** @class */ (function () {
         observable.subscribe(function (response) {
             _this.weather = response;
             console.log('your San Jose weather is', _this.weather);
-            _this.temp_min = ((_this.weather.main.temp_min * (9 / 5) - 459));
-            _this.temp_max = ((_this.weather.main.temp_max * (9 / 5) - 459));
-            _this.temp = ((_this.weather.main.temp * (9 / 5) - 459));
+            _this.temp_min = Math.floor(((_this.weather.main.temp_min * (9 / 5) - 459)));
+            _this.temp_max = Math.floor(((_this.weather.main.temp_max * (9 / 5) - 459)));
+            _this.temp = Math.floor(((_this.weather.main.temp * (9 / 5) - 459)));
             _this.status = _this.weather.weather[0].description;
             _this.humidity = _this.weather.main.humidity;
         });
@@ -521,9 +521,9 @@ var DcComponent = /** @class */ (function () {
         observable.subscribe(function (response) {
             _this.weather = response;
             console.log('your San Jose weather is', _this.weather);
-            _this.temp_min = ((_this.weather.main.temp_min * (9 / 5) - 459));
-            _this.temp_max = ((_this.weather.main.temp_max * (9 / 5) - 459));
-            _this.temp = ((_this.weather.main.temp * (9 / 5) - 459));
+            _this.temp_min = Math.floor(((_this.weather.main.temp_min * (9 / 5) - 459)));
+            _this.temp_max = Math.floor(((_this.weather.main.temp_max * (9 / 5) - 459)));
+            _this.temp = Math.floor(((_this.weather.main.temp * (9 / 5) - 459)));
             _this.status = _this.weather.weather[0].description;
             _this.humidity = _this.weather.main.humidity;
         });
@@ -665,9 +665,9 @@ var SanjoseComponent = /** @class */ (function () {
         observable.subscribe(function (response) {
             _this.weather = response;
             console.log('your San Jose weather is', _this.weather);
-            _this.temp_min = ((_this.weather.main.temp_min * (9 / 5) - 459));
-            _this.temp_max = ((_this.weather.main.temp_max * (9 / 5) - 459));
-            _this.temp = ((_this.weather.main.temp * (9 / 5) - 459));
+            _this.temp_min = Math.floor(((_this.weather.main.temp_min * (9 / 5) - 459)));
+            _this.temp_max = Math.floor(((_this.weather.main.temp_max * (9 / 5) - 459)));
+            _this.temp = Math.floor(((_this.weather.main.temp * (9 / 5) - 459)));
             _this.status = _this.weather.weather[0].description;
             _this.humidity = _this.weather.main.humidity;
         });
@@ -744,9 +744,9 @@ var SeattleComponent = /** @class */ (function () {
         var observable = this._weatherService.bobFunction();
         observable.subscribe(function (server_response) {
             _this.weather = server_response;
-            _this.temp_min = ((_this.weather.main.temp_min * (9 / 5) - 459));
-            _this.temp_max = ((_this.weather.main.temp_max * (9 / 5) - 459));
-            _this.temp = ((_this.weather.main.temp * (9 / 5) - 459));
+            _this.temp_min = Math.floor(((_this.weather.main.temp_min * (9 / 5) - 459)));
+            _this.temp_max = Math.floor(((_this.weather.main.temp_max * (9 / 5) - 459)));
+            _this.temp = Math.floor(((_this.weather.main.temp * (9 / 5) - 459)));
             _this.status = _this.weather.weather[0].description;
             _this.humidity = _this.weather.main.humidity;
             console.log('your Seattle forecast is....', _this.weather);
