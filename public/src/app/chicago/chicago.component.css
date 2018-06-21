@@ -1,0 +1,29 @@
+.detailBox{
+  width: 100%;
+  margin: auto;
+  vertical-align: top;
+}
+h1{
+  text-align: center;
+}
+
+.info{
+  width: 49.5%;
+  height: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.locationPic{
+  width: 49.5%;
+  height: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+.dojoPicture{
+  background-image: url(chicago.png);
+  width: 380px;
+  height: 250px;
+  vertical-align: top;
+}
+
